@@ -354,8 +354,8 @@
                         <div class="honors-container">
                             <h4>Honors Received with Certification</h4>
                             <div class="certification">
-                                <input type="file" name="images[]" id="Mobileimages" accept="image/*" multiple hidden>
-                                <label for="images" class="custom-file-upload">Insert Image</label>
+                                <input type="file" name="images[]" id="mobile-images" accept="image/*" multiple hidden>
+                                <label for="mobile-images" class="custom-file-upload">Insert Image</label>
                                 <span id="mobile-file-chosen">No file chosen</span>
                             </div>
                         </div>
@@ -435,15 +435,15 @@
         }
     });
 
-    const mobilefileInput = document.getElementById('Mobileimages');
-    const mobilefileChosen = document.getElementById('mobile-file-chosen');
+    const mobileFileInput = document.getElementById('mobile-images');
+    const mobileFileChosen = document.getElementById('mobile-file-chosen');
 
-    mobilefileInput.addEventListener('change', function () {
-        if (mobilefileInput.files.length > 0) {
-            const fileNames = Array.from(mobilefileInput.files).map(file => file.name).join(', ');
-            mobilefileChosen.textContent = fileNames;
+    mobileFileInput.addEventListener('change', function () {
+        if (mobileFileInput.files.length > 0) {
+            const fileNames = Array.from(mobileFileInput.files).map(file => file.name).join(', ');
+            mobileFileChosen.textContent = fileNames;
         } else {
-            mobilefileChosen.textContent = 'No file chosen';
+            mobileFileChosen.textContent = 'No file chosen';
         }
     });
 
