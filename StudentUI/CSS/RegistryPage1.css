@@ -1,0 +1,420 @@
+.desktop .body-container .personal-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 1rem 2rem;
+    flex-direction: column;
+}
+
+.desktop .body-container .personal-container .title {
+    font-size: 1.5rem;
+}
+
+.desktop .body-container .personal-container .input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%
+}
+
+.desktop .body-container .personal-container .input-container .inputs {
+    line-height: 1.5rem;
+    margin-top: 5%;
+}
+
+.desktop .body-container .personal-container .input-container .inputs p {
+    font-size: 1.2rem;
+}
+
+.desktop .body-container .personal-container .input-container .inputs input {
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid #0f3e5c;
+    width: 18rem;
+    height: 1.8rem;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+
+.desktop .body-container .personal-container .input-container .inputs .input-forms input[type=radio] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #0f3e5c;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.desktop .body-container .personal-container .input-container .inputs .input-forms input[type=radio]:checked {
+    background-color: #0f3e5c;
+    border-color: #0f3e5c;
+}
+
+.desktop .body-container .personal-container .input-container .inputs .input-forms label {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+.desktop textarea {
+    width: 20vw;
+    resize: none;
+    background-color: transparent;
+    border: 1px solid #0f3e5c;
+    border-radius: 10px;
+    height: 10vh;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.desktop .body-container .personal-container .input-container .inputs .input-forms-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.desktop .body-container .personal-container .input-container .inputs .input-forms-container .inputs {
+    margin-top: 0;
+}
+
+.desktop .body-container .personal-container .input-container .inputs .input-forms-container .inputs #age {
+    width: 5rem;
+}
+
+.desktop .body-container .personal-container .input-container .inputs .input-forms-container .inputs #civil {
+    width: 8rem;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.desktop .body-container .personal-container .input-container .inputs .input-forms-container .inputs #citizenship {
+    width: 10rem;
+}
+
+.desktop .body-container .personal-container .input-container .inputs .input-forms-container .inputs #religion {
+    width: 9em;
+}
+
+.desktop .body-container .personal-container .input-container .inputs .input-forms-container .inputs #district {
+    width: 7rem;
+}
+
+.desktop .body-container .personal-container .input-container .inputs .input-forms-container .inputs #postal {
+    width: 7rem;
+}
+
+.desktop .body-container .flex-container {
+    width: 100%;
+    display: flex;
+}
+
+.desktop .body-container .flex-container .educational-container {
+    width: 82%;
+    padding: 1rem 2rem;
+    overflow-y: hidden;
+}
+
+.desktop .body-container .flex-container .educational-container .title {
+    font-size: 1.5rem;
+}
+
+.desktop .body-container .educational-container .input-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    width: 100%
+}
+
+.desktop .body-container .educational-container .input-container .inputs {
+    line-height: 1.5rem;
+    margin-top: 5%;
+}
+
+.desktop .body-container .educational-container .input-container .inputs p {
+    font-size: 1.2rem;
+}
+
+.desktop .body-container .educational-container .input-container .inputs input {
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid #0f3e5c;
+    width: 15rem;
+    height: 1.8rem;
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+.desktop .body-container .educational-container .input-container .inputs .input-forms-single-container input[type=radio] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 2px solid #0f3e5c;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.desktop .body-container .educational-container .input-container .inputs .input-forms-single-container input[type=radio]:checked {
+    background-color: #0f3e5c;
+    border-color: #0f3e5c;
+}
+
+.desktop .body-container .educational-container .input-container .inputs .input-forms-single-container label {
+    font-size: 1rem;
+}
+
+.desktop #Mobileimages {
+    display: none;
+}
+
+.desktop .custom-file-upload {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #0f3e5c;
+    color: white;
+    font-size: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    margin-top: 5%;
+}
+
+.desktop #file-chosen {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #333;
+    display: inline-block;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.desktop .body-container .button-pages {
+    position: absolute;
+    bottom: 0;
+    right: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.desktop .body-container .button-pages .button-page {
+    padding: 10px 20px;
+    background-color: #0f3e5c;
+    color: white;
+    font-size: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+}
+
+.desktop .body-container .button-pages .page-number {
+    font-size: 1.2rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/* MOBILE */
+
+.mobile .body-container .personal-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 1rem 2rem;
+    flex-direction: column;
+}
+
+.mobile .body-container .personal-container .title {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.mobile .body-container .personal-container .input-container .inputs {
+    line-height: 1.5rem;
+    margin-top: 2%;
+}
+
+.mobile .body-container .personal-container .input-container .inputs p {
+    font-size: 0.8rem;
+}
+
+.mobile .body-container .personal-container .input-container .inputs input {
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid #0f3e5c;
+    width: 18rem;
+    height: 1.3rem;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+
+.mobile .body-container .personal-container .input-container .inputs input[type=radio] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #0f3e5c;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.mobile .body-container .personal-container .input-container .inputs input[type=radio]:checked {
+    background-color: #0f3e5c;
+    border-color: #0f3e5c;
+}
+
+.mobile .body-container .personal-container .input-container .inputs label {
+    font-size: .8rem;
+    margin-left: 2px;
+}
+
+.mobile .body-container .personal-container .input-container .inputs #civil {
+    width: 8rem;
+    background-color: transparent;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.mobile .body-container .educational-container {
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.mobile .body-container .educational-container .title {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mobile .body-container .educational-container .input-container .inputs {
+    line-height: 1.5rem;
+    margin-top: 2%;
+}
+
+.mobile .body-container .educational-container .input-container .inputs p {
+    font-size: .8rem;
+}
+
+.mobile .body-container .educational-container .input-container .inputs input {
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid #0f3e5c;
+    width: 17rem;
+    height: 1.3rem;
+    padding: 5px;
+    font-size: 0.8rem;
+}
+
+.mobile .body-container .educational-container .input-container .inputs input[type=radio] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 2px solid #0f3e5c;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.mobile .body-container .educational-container .input-container .inputs input[type=radio]:checked {
+    background-color: #0f3e5c;
+    border-color: #0f3e5c;
+}
+
+.mobile .body-container .educational-container .input-container .inputs label {
+    font-size: .8rem;
+}
+
+.mobile #images {
+    display: none;
+}
+
+.mobile .custom-file-upload {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #0f3e5c;
+    color: white;
+    font-size: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    margin-top: 5%;
+}
+
+.mobile #mobile-file-chosen {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #333;
+    display: inline-block;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.mobile textarea {
+    width: 50vw;
+    resize: none;
+    background-color: transparent;
+    border: 1px solid #0f3e5c;
+    border-radius: 10px;
+    height: 8vh;
+    padding: 5px;
+}
+
+
+.mobile .body-container .button-pages {
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile .body-container .button-pages .button-page {
+    position: relative;
+    padding: 10px 15px;
+    background-color: #0f3e5c;
+    color: white;
+    font-size: 1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+}
+
+.mobile .body-container .button-pages .page-number {
+    font-size: .8rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

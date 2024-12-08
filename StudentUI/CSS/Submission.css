@@ -1,0 +1,30 @@
+.body-container {
+    min-height: 90vh;
+    text-align: center;
+}
+
+.body-container p {
+    color: #003049; 
+    margin-top: 3%;
+    font-size: 2.5rem;
+    width: 60%;
+    line-height: 4rem;
+}
+
+.body-container button {
+    background-color: #0f3e5c;
+    color: #FDF0D5; 
+    border: none;
+    padding: 5px 50px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    line-height: 1.5rem;
+    margin-top: 50%;
+}
+
+.body-container button:hover {
+    background-color: #084b7d; 
+}
