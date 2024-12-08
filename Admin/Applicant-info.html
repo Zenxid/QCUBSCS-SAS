@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applicants Information</title>
+    <link rel="stylesheet" href="CSS/default.css">
+    <link rel="stylesheet" href="CSS/Applicant-info.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.1/fonts/remixicon.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../Pictures/SAS LOGO.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Pictures/SAS LOGO.png" type="image/x-icon">
+</head>
+<body>
+    <div class="back-button-container">
+        <a href="Applicants.html"><i class='bx bx-arrow-back'></i></a>
+    </div>
+    <div class="title-container">
+        <p class="title">Application Information</p>
+    </div>
+
+    <div class="main-container">
+        <div class="profile-container">
+            <div class="profile-info">
+                <img src="../Pictures/profile.jpg" alt="No Profile">
+            </div>
+            <p><b>Registration Date:</b> 12 - 25 - 2005</p>
+            <p><b>Name:</b> Sean Michael Bryan G. Lao</p>
+            <p><b>Age:</b> 19</p>
+            <p><b>Gender:</b> Male</p>
+            <p><b>Date of Birth:</b> November 25, 2005</p>
+            <p><b>Email:</b> seanlao808@gmail.com</p>
+            <p><b>3 Course Applied:</b></p>
+            <p><b>1st.</b> Bachelor of Science in Computer Science</p>
+            <p><b>2nd.</b> Bachelor of Science in Information Technology</p>
+            <p><b>3rd.</b> Bachelor of Arts in Political Science</p>
+        </div>
+        <div class="educational-container">
+            <h3>Educational Background: </h3>
+            <p><b>Senior High School Name:</b> STI-College Munoz-Edsa</p>
+            <p><b>Track/Strand:</b> IT in Mobile App and Web Development</p>
+            <p><b>Section:</b> ITMAWD401</p>
+            <p><b>School Address:</b> School Address I Forgot</p>
+            <p><b>Honors Received:</b></p>
+            <div class="column">
+                <select name="Honors" id="Honors">
+                    <option value="first">First</option>
+                    <option value="second">Second</option>
+                    <option value="third">Third</option>
+                    <option value="fourth">Fourth</option>
+                    <option value="fifth">Fifth</option>
+                    <option value="sixth">Sixth</option>
+                    <option value="seventh">Seventh</option>
+                    <option value="eight">Eight</option>
+                    <option value="ninth">Ninth</option>
+                    <option value="tenth">Tenth</option>
+                </select>
+                <img src="../Pictures/Honors Diploma.png" class="img-honors">
+            </div>
+        </div>
+        <div class="personal-container">
+            <h3>Personal Background: </h3>
+            <p><b>Contact No:</b> 095213123</p>
+            <p><b>Citizenship:</b> Unknown</p>
+            <p><b>Present Address:</b> 123 Lookman Street</p>
+            <p><b>District No:</b> 2</p>
+            <p><b>Mother's Name:</b> Mom</p>
+            <p><b>Father's Name:</b> Dad</p>
+            <p><b>Remarks:</b></p>
+            <textarea name="remarks" id="remarks"></textarea>
+            <div class="buttons">
+                <button class="incomplete">Incomplete</button>
+                <button class="approved">Approved</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const imgHonors = document.querySelector('.img-honors');
+        const modal = document.createElement('div');
+        modal.classList.add('img-modal');
+        modal.innerHTML = `
+            <span class="close">&times;</span>
+            <img src="${imgHonors.src}" alt="Enlarged Image">
+        `;
+        document.body.appendChild(modal);
+
+        const closeModal = () => modal.style.display = 'none';
+
+        imgHonors.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        });
+
+        modal.querySelector('.close').addEventListener('click', closeModal);
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+    });
+</script>
