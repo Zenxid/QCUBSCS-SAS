@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Dashboard.css">
+    <link rel="stylesheet" href="CSS/default.css">
+    <link rel="icon" href="../Pictures/SAS LOGO.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../Pictures/SAS LOGO.png" type="image/x-icon">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="sidenav">
+        <div class="logo-container">
+            <img src="../Pictures/SAS LOGO.png" alt="Logo" class="logo">
+            <h2 class="title">Admin Dashboard</h2>
+        </div>
+        <a href="Dashboard.html">Dashboard</a>
+        <a href="Result.html">Applicant Results</a>
+        <a href="Applicants.html">Applicant Profile & Requirements</a>
+        <a href="../Landing/index.html" class="logout">Log Out</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Welcome to the Dashboard</h1>
+        
+        <div class="recent-results">
+            <div class="results-header">
+                <h2>Recent Applicant Results</h2>
+                <div class="dropdown">
+                    <label for="status-filter">Filter by Status: </label>
+                    <select id="status-filter">
+                        <option value="all">All</option>
+                        <option value="passed">Passed</option>
+                        <option value="failed">Failed</option>
+                    </select>
+                </div>
+            </div>
+            
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Exam Score</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>85</td>
+                        <td class="passed">Passed</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>65</td>
+                        <td class="failed">Failed</td>
+                    </tr>
+                    <tr>
+                        <td>Mark Lee</td>
+                        <td>92</td>
+                        <td class="passed">Passed</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Davis</td>
+                        <td>55</td>
+                        <td class="failed">Failed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="recent-results">
+            <div class="results-header">
+                <h2>Recent Applicant Requirements Status</h2>
+                <div class="dropdown">
+                    <label for="status-filter">Filter by Status: </label>
+                    <select id="status-filter">
+                        <option value="all">All</option>
+                        <option value="passed">Approved</option>
+                        <option value="failed">Stall</option>
+                    </select>
+                </div>
+            </div>
+
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Preferred Program</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>Bachelor of Science in Computer Science</td>
+                        <td class="passed">Approved</td>
+                    </tr>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>Bachelor of Science in Early Childhood Education</td>
+                        <td class="stall">Stall</td>
+                    </tr>
+                    <tr>
+                        <td>Mark Lee</td>
+                        <td>Bachelor of Science in Information Technology</td>
+                        <td class="passed">Approved</td>
+                    </tr>
+                    <tr>
+                        <td>Emily Davis</td>
+                        <td>Bachelor of Science in Criminology</td>
+                        <td class="stall">Stall</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
