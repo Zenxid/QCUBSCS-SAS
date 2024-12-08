@@ -94,18 +94,18 @@
                 <div class="uploads">
                     <div class="id-container">
                         <p class="title">Student 2x2 ID Picture</p>
-                        <div id="image-preview" style="margin-top: 10px;"></div>
+                        <div id="image-preview-desktop" style="margin-top: 10px;"></div> <!-- Unique ID -->
                         <input type="file" name="images" id="images" accept="image/png, image/jpeg" hidden>
                         <label for="images" class="custom-file-upload">Insert Image</label>
-                        <span id="file-chosen">No file chosen</span>
+                        <span id="file-chosen-desktop">No file chosen</span> <!-- Unique ID -->
                         <p class="upload-info">Upload PNG, JPG format. Images should not be more than 2MB.</p>
                     </div>
                     <div class="signature-container">
                         <p class="title">Digital Signature</p>
-                        <div id="signature-preview" style="margin-top: 10px;"></div>
+                        <div id="signature-preview-desktop" style="margin-top: 10px;"></div> <!-- Unique ID -->
                         <input type="file" name="signature" id="signature" accept="image/png, image/jpeg" hidden>
                         <label for="signature" class="custom-file-upload">Insert Signature</label>
-                        <span id="signature-chosen">No file chosen</span>
+                        <span id="signature-chosen-desktop">No file chosen</span> <!-- Unique ID -->
                         <p class="upload-info">Upload PNG, JPG format. Images should not be more than 2MB.</p>
                     </div>
                 </div>
@@ -195,18 +195,18 @@
             <p style="font-size: .8rem; font-weight: 600; color: #333;">UPLOAD ID PICTURE AND DIGITAL SIGNATURE (FOR TEST PERMIT)</p>
             <div class="id-container" style="margin-top: 5%;">
                 <p class="title">Student 2x2 ID Picture</p>
-                <div id="image-preview" style="margin-top: 10px;"></div>
+                <div id="image-preview-mobile" style="margin-top: 10px;"></div> <!-- Unique ID -->
                 <input type="file" name="images" id="images" accept="image/png, image/jpeg" hidden>
                 <label for="images" class="custom-file-upload">Insert Image</label>
-                <span id="file-chosen">No file chosen</span>
+                <span id="file-chosen-mobile">No file chosen</span> <!-- Unique ID -->
                 <p class="upload-info">Upload PNG, JPG format. Images should not be more than 2MB.</p>
             </div>
             <div class="signature-container">
                 <p class="title">Digital Signature</p>
-                <div id="signature-preview" style="margin-top: 10px;"></div>
+                <div id="signature-preview-mobile" style="margin-top: 10px;"></div> <!-- Unique ID -->
                 <input type="file" name="signature" id="signature" accept="image/png, image/jpeg" hidden>
                 <label for="signature" class="custom-file-upload">Insert Signature</label>
-                <span id="file-chosen">No file chosen</span>
+                <span id="signature-chosen-mobile">No file chosen</span> <!-- Unique ID -->
                 <p class="upload-info">Upload PNG, JPG format. Images should not be more than 2MB.</p>
             </div>
             <div class="button-pages">
@@ -278,13 +278,23 @@
         }
     });
 
-    const fileInput = document.getElementById('images');
-    const fileChosen = document.getElementById('file-chosen');
-    const imagePreview = document.getElementById('image-preview');
+    // Desktop version
+    const fileInputDesktop = document.getElementById('images-desktop');
+    const fileChosenDesktop = document.getElementById('file-chosen-desktop');
+    const imagePreviewDesktop = document.getElementById('image-preview-desktop');
 
-    const signatureInput = document.getElementById('signature');
-    const signatureChosen = document.getElementById('signature-chosen');
-    const signaturePreview = document.getElementById('signature-preview');
+    const signatureInputDesktop = document.getElementById('signature-desktop');
+    const signatureChosenDesktop = document.getElementById('signature-chosen-desktop');
+    const signaturePreviewDesktop = document.getElementById('signature-preview-desktop');
+
+    // Mobile version
+    const fileInputMobile = document.getElementById('images-mobile');
+    const fileChosenMobile = document.getElementById('file-chosen-mobile');
+    const imagePreviewMobile = document.getElementById('image-preview-mobile');
+
+    const signatureInputMobile = document.getElementById('signature-mobile');
+    const signatureChosenMobile = document.getElementById('signature-chosen-mobile');
+    const signaturePreviewMobile = document.getElementById('signature-preview-mobile');
 
     function handleFileUpload(inputElement, previewElement, chosenElement) {
         inputElement.addEventListener('change', function () {
@@ -305,7 +315,7 @@
                 }
 
                 if (fileSize > 2 * 1024 * 1024) {
-                    alert('File size must not exceed 400KB.');
+                    alert('File size must not exceed 2MB.');
                     inputElement.value = '';
                     chosenElement.textContent = 'No file chosen';
                     return;
@@ -334,8 +344,13 @@
         });
     }
 
-    handleFileUpload(fileInput, imagePreview, fileChosen);
-    handleFileUpload(signatureInput, signaturePreview, signatureChosen);
+    // Handle file upload for desktop
+    handleFileUpload(fileInputDesktop, imagePreviewDesktop, fileChosenDesktop);
+    handleFileUpload(signatureInputDesktop, signaturePreviewDesktop, signatureChosenDesktop);
+
+    // Handle file upload for mobile
+    handleFileUpload(fileInputMobile, imagePreviewMobile, fileChosenMobile);
+    handleFileUpload(signatureInputMobile, signaturePreviewMobile, signatureChosenMobile);
 
 
 
