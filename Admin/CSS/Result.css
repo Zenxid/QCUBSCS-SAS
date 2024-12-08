@@ -1,0 +1,136 @@
+/* Sidebar (Sidenav) */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #669BBC;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.title {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.sidenav a {
+    display: block;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidenav a:hover {
+    background-color: #87ccf7;
+}
+
+.sidenav .logout {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.sidenav .logout:hover {
+    background-color: #c0392b;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
+}
+
+.main-content h1 {
+    margin-bottom:2% ;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+}
+
+#status-filter {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-left: 10px;
+}
+
+.applicants-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    max-height: 490px;
+    overflow-y: auto;
+    display: block;
+}
+
+.applicants-table th, .applicants-table td {
+    padding: 12px 23px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.applicants-table th {
+    background-color: #669BBC;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.applicants-table td a {
+    color: #888888;
+    text-decoration: none;
+}
+
+.applicants-table tr:hover {
+    background-color: #ddd;
+}
+
+.applicants-table .passed {
+    color: green;
+}
+
+.applicants-table .failed {
+    color: red;
+}
+
+.applicants-table::-webkit-scrollbar {
+    width: 8px;
+}
+
+.applicants-table::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.applicants-table::-webkit-scrollbar-thumb {
+    background: #669BBC;
+    border-radius: 10px;
+}
+
+.applicants-table::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.applicants-table::-webkit-scrollbar-button {
+    display: none;
+}

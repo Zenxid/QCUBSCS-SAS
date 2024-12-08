@@ -1,0 +1,127 @@
+/* Sidebar (Sidenav) */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #669BBC;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.title {
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.sidenav a {
+    display: block;
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidenav a:hover {
+    background-color: #87ccf7;
+}
+
+.sidenav .logout {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+
+.sidenav .logout:hover {
+    background-color: #c0392b;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 260px;
+    padding: 20px;
+    width: calc(100% - 260px);
+}
+
+.recent-results {
+    margin-top: 2%;
+}
+
+.recent-results h2 {
+    font-size: 26px;
+    margin-bottom: 0;
+}
+
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.results-header h2 {
+    margin-right: 20px;
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+}
+
+#status-filter {
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-left: 10px;
+}
+
+/* Styling the table */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.results-table th, .results-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.results-table th {
+    background-color: #669BBC;
+    color: white;
+    
+}
+
+
+.results-table tr:hover {
+    background-color: #ddd;
+}
+
+.results-table .passed {
+    color: green;
+}
+
+.results-table .failed {
+    color: red;
+}
+
+.results-table .stall {
+    color: goldenrod;
+}
